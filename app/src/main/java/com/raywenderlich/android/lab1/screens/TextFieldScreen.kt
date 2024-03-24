@@ -41,7 +41,6 @@ fun TextFieldScreen() {
 
 
 @Composable
-@Preview
 fun MyTextField() {
     val textValue = remember { mutableStateOf("") }
 

@@ -33,23 +33,23 @@ fun MyAlertDialog() {
                 shouldShowDialog.value = false
                 FundamentalsRouter.navigateTo(Screen.Navigation)
             },
-               //5
-               title = { Text(text = stringResource(id = R.string.title_alertDialog))},
-               text = { Text(text = stringResource(id = R.string.alertDialog_about))},
-               confirmButton = { //6
-                   Button(
-                       colors = ButtonDefaults.buttonColors(backgroundColor = Color.Blue),
-                       onClick = {
-                           shouldShowDialog.value = false
-                           FundamentalsRouter.navigateTo(Screen.Navigation)
-                       }
-                   ) {
-                       Text(
-                           text = stringResource(id = R.string.massage_button),
-                           color = Color.White
-                       )
-                   }
+            //5
+            title = { Text(text = stringResource(id = R.string.title_alertDialog)) },
+            text = { Text(text = stringResource(id = R.string.alertDialog_about)) },
+            confirmButton = { //6
+                Button(
+                    colors = ButtonDefaults.buttonColors(backgroundColor = Color.Blue),
+                    onClick = {
+                        shouldShowDialog.value = false
+                        FundamentalsRouter.navigateTo(Screen.Navigation)
+                    }
+                ) {
+                    Text(
+                        text = stringResource(id = R.string.massage_button),
+                        color = Color.White
+                    )
+                }
 
-               }
+            }
         )
     }
